@@ -20,8 +20,8 @@ class Requester(requests.Session):
 
     def get_proxies(self, proxies, debug):
         
-        self.proxies['http'] = "http://",proxies
-        self.proxies['https'] = "https://",proxies
+        self.proxies['http'] = f"http://{proxies}"
+        self.proxies['https'] = f"https://{proxies}"
         i = 0
         if self.check(proxies=self.proxies) == True:
             return self.session.proxies.update(self.proxies)
