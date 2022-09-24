@@ -95,8 +95,8 @@ class Scrapper():
 
 
 
-#app = Scrapper("https://httpbin.org/ip", header="auto", proxies_file="../proxies.txt", debug=True)
-#print(app.response.text)
+
+
 
 
 
